@@ -1,5 +1,10 @@
 .App {
     display: flex;
     min-height: 100vh;
-    background: #3b3b3b;
+}
+
+.AppDash {
+    height: 100vh;
+    width: 100vw;
+    user-select: none;
 }

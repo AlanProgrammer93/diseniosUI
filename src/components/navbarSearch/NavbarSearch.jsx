@@ -6,11 +6,11 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import { useState } from 'react'
 
 const NavbarSearch = () => {
-    const [showInputSearch, setShowInputSearch] = useState(true)
+    const [showInputSearch, setShowInputSearch] = useState(false)
     const [showToggle, setShowToggle] = useState(false)
 
   return (
-    <header className={`${showToggle && 'open'}`}>
+    <header className={`header1 ${showToggle && 'open'}`}>
         <a href='#' className='logo'>Logo</a>
         <div className='group'>
             <ul className='navigation'>
@@ -30,7 +30,6 @@ const NavbarSearch = () => {
                     <GiHamburgerMenu className='menuToggle' onClick={() => setShowToggle(!showToggle)} />
                 </span>
             </div>
-            {/* <GiHamburgerMenu className='menuToggle' /> */}
         </div>
         <div className={`searchBox ${showInputSearch && 'active'}`}>
             <input type='text' placeholder='Search here ...' />
