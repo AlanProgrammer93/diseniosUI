@@ -2,6 +2,7 @@ import './App.css'
 import DashboardResponsive from './components/DashboardResponsive/DashboardResponsive'
 import CircularOurTeam from './components/circularOurTeam/CircularOurTeam'
 import DropdownMenu from './components/dropdownMenu/DropdownMenu'
+import LoginAnimated from './components/loginAnimated/LoginAnimated'
 import NavbarSearch from './components/navbarSearch/NavbarSearch'
 import RangeInputBasic from './components/rangeInputBasic/RangeInputBasic'
 
@@ -22,6 +23,9 @@ function App() {
       </div>
       <div className='AppCOT' style={{ background: '#3b3b3b' }}>
         <CircularOurTeam />
+      </div>
+      <div className='AppCOT' style={{ background: '#2b2b2b' }}>
+        <LoginAnimated />
       </div>
     </>
   )

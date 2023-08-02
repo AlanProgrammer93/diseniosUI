@@ -79,7 +79,7 @@ const CircularOurTeam = () => {
         </div>
 
         <div className='content_COT'>
-            <div className='contentBx_COT active_COT' id='content1'>
+            <div className={`contentBx_COT active_COT`} id='content1'>
                 <div className='card_COT'>
                     <div className='imgBx_COT'>
                         <img src={showCard} />
@@ -103,31 +103,6 @@ const CircularOurTeam = () => {
                     </div>
                 </div>
             </div>
-
-            {/* <div className='contentBx_COT' id='content2'>
-                <div className='card_COT'>
-                    <div className='imgBx_COT'>
-                        <img src={img2} />
-                    </div>
-                    <div className='textBx_COT'>
-                        <h2>Someone Famous <br /> <span>Product Designer</span></h2>
-                        <ul className='sci_COT'>
-                            <li><a href='#'>
-                                <MdFacebook />
-                            </a></li>
-                            <li><a href='#'>
-                                <FaTwitter />
-                            </a></li>
-                            <li><a href='#'>
-                                <FaInstagram />
-                            </a></li>
-                            <li><a href='#'>
-                                <FaLinkedinIn />
-                            </a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div> */}
         </div>
     </div>
   )
