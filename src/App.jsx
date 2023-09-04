@@ -5,6 +5,7 @@ import DropdownMenu from './components/dropdownMenu/DropdownMenu'
 import LoginAnimated from './components/loginAnimated/LoginAnimated'
 import NavbarSearch from './components/navbarSearch/NavbarSearch'
 import RangeInputBasic from './components/rangeInputBasic/RangeInputBasic'
+import RankList from './components/rankList/RankList'
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
       </div>
       <div className='AppCOT' style={{ background: '#2b2b2b' }}>
         <LoginAnimated />
+      </div>
+      <div className='AppCOT' style={{ background: '#f5f5f5' }}>
+        <RankList />
       </div>
     </>
   )

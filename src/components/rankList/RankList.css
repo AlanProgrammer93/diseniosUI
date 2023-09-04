@@ -1,0 +1,75 @@
+.title_RL {
+    font-size: 1.75em;
+    color: #333;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.box_RL {
+    position: relative;
+    min-width: 350px;
+}
+.box_RL .list_RL {
+    position: relative;
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+    overflow: hidden;
+    background: #fff;
+}
+.box_RL:hover .list_RL {
+    filter: blur(5px);
+    opacity: 0.25;
+}
+.box_RL .list_RL:hover {
+    box-shadow: -10px 20px 35px rgba(0, 0, 0, 0.15);
+    transform: scale(1.5);
+    filter: blur(0px);
+    opacity: 1;
+}
+.box_RL .list_RL .imgBx_RL {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.box_RL .list_RL .imgBx_RL img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box_RL .list_RL .content_RL {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #333;
+}
+.box_RL .list_RL .content_RL .rank_RL {
+    position: absolute;
+    right: -50px;
+    color: #03a9f4;
+    transition: 0.5s;
+    font-size: 2em;
+}
+.box_RL .list_RL .content_RL .rank_RL small {
+    font-weight: 500;
+    opacity: 0.25;
+}
+.box_RL .list_RL:hover .content_RL .rank_RL {
+    right: 20px;
+}
+.box_RL .list_RL .content_RL h4 {
+    line-height: 1.2em;
+    font-weight: 600;
+}
+.box_RL .list_RL .content_RL p {
+    font-size: 0.75em;
+}
