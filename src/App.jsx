@@ -2,6 +2,7 @@ import './App.css'
 import DashboardResponsive from './components/DashboardResponsive/DashboardResponsive'
 import CircularOurTeam from './components/circularOurTeam/CircularOurTeam'
 import DropdownMenu from './components/dropdownMenu/DropdownMenu'
+import GlassmorphismCardHover from './components/glassmorphismCardHover/GlassmorphismCardHover'
 import LoginAnimated from './components/loginAnimated/LoginAnimated'
 import NavbarSearch from './components/navbarSearch/NavbarSearch'
 import RangeInputBasic from './components/rangeInputBasic/RangeInputBasic'
@@ -30,6 +31,9 @@ function App() {
       </div>
       <div className='AppCOT' style={{ background: '#f5f5f5' }}>
         <RankList />
+      </div>
+      <div className='AppGCH'>
+        <GlassmorphismCardHover />
       </div>
     </>
   )

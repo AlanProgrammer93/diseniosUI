@@ -15,3 +15,24 @@
     align-items: center;
     min-height: 100vh;
 }
+
+.AppGCH {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #111;
+    transition: 0.5s;
+}
+.AppGCH:has(.box_GCH[data-color="clr1"]:hover) {
+    background: #162527;
+}
+.AppGCH:has(.box_GCH[data-color="clr2"]:hover) {
+    background: #202011;
+}
+.AppGCH:has(.box_GCH[data-color="clr3"]:hover) {
+    background: #5b4510;
+}
+.AppGCH:has(.box_GCH[data-color="clr4"]:hover) {
+    background: #611417;
+}

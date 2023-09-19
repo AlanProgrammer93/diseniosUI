@@ -4,9 +4,6 @@ import img2 from '../../assets/imagesCircularTeam/img2.jpeg'
 import img3 from '../../assets/imagesCircularTeam/img3.jpeg'
 import img4 from '../../assets/imagesCircularTeam/img4.jpeg'
 import img5 from '../../assets/imagesCircularTeam/img5.jpeg'
-import img6 from '../../assets/imagesCircularTeam/img6.jpeg'
-import img7 from '../../assets/imagesCircularTeam/img7.jpeg'
-import img8 from '../../assets/imagesCircularTeam/img8.jpeg'
 
 import './RankList.css'
 
