@@ -3,6 +3,7 @@ import DashboardResponsive from './components/DashboardResponsive/DashboardRespo
 import CircularOurTeam from './components/circularOurTeam/CircularOurTeam'
 import DropdownMenu from './components/dropdownMenu/DropdownMenu'
 import GlassmorphismCardHover from './components/glassmorphismCardHover/GlassmorphismCardHover'
+import Loading from './components/loading/Loading'
 import LoginAnimated from './components/loginAnimated/LoginAnimated'
 import NavbarSearch from './components/navbarSearch/NavbarSearch'
 import RangeInputBasic from './components/rangeInputBasic/RangeInputBasic'
@@ -34,6 +35,9 @@ function App() {
       </div>
       <div className='AppGCH'>
         <GlassmorphismCardHover />
+      </div>
+      <div className='AppCOT' style={{ background: '#001d10' }} >
+        <Loading />
       </div>
     </>
   )
