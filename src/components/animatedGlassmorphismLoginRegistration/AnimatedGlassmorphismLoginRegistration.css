@@ -1,0 +1,171 @@
+.container_AGL {
+    position: relative;
+    width: 350px;
+    height: 340px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.container_AGL::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: repeating-conic-gradient(from var(--a), #45f3ff 0%, 
+        #45f3ff 10%, transparent 10%, transparent 80%, #45f3ff 100%);
+    border-radius: 20px;
+    animation: animateAGL 2.5s linear infinite;
+}
+
+.AppAnimatedLogin.signup_AGL .container_AGL::before {
+    filter: hue-rotate(140deg);
+}
+
+@property --a {
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+
+@keyframes animateAGL {
+    0% {
+        --a: 0deg
+    }
+    100% {
+        --a: 360deg
+    }
+}
+
+.container_AGL span {
+    position: absolute;
+    inset: 5px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.container_AGL span {
+    position: absolute;
+    inset: 5px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.container_AGL span::before {
+    content: '';
+    position: absolute;
+    inset: 5px;
+    background: url('../../assets/img1.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+}
+
+.container_AGL span::after {
+    content: '';
+    position: absolute;
+    inset: 5px;
+    background: url('../../assets/img1.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    filter: blur(15px);
+}
+
+.AppAnimatedLogin.signup_AGL .container_AGL span::before,
+.AppAnimatedLogin.signup_AGL .container_AGL span::after {
+    background: url('../../assets/img2.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    filter: blur(15px);
+}
+
+form {
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    transition: 0.5s;
+}
+
+form#signupForm {
+    left: 100%;
+}
+
+.AppAnimatedLogin.signup_AGL form#signinForm {
+    left: -100%;
+}
+
+.AppAnimatedLogin.signup_AGL form#signupForm {
+    left: 0;
+}
+
+form h2 {
+    position: relative;
+    color: #fff;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+form .inputBox_AGL {
+    position: relative;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+form .inputBox_AGL a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.85em;
+}
+
+form .inputBox_AGL a:nth-child(2) {
+    text-decoration: underline;
+}
+
+form .inputBox_AGL input {
+    width: 100%;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(0, 0, 0, 0.15);
+    padding: 6px 15px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 0.85em;
+}
+
+form .inputBox_AGL input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+form .inputBox_AGL input[type="submit"] {
+    background: #2196f3;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+form#signupForm .inputBox_AGL input[type="submit"] {
+    background: #f4242f;
+}
+
+form#signupForm b {
+    font-weight: 500;
+    color: #ffeb3b;
+    text-decoration: underline;
+    cursor: pointer;
+}

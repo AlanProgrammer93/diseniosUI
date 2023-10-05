@@ -1,5 +1,7 @@
+import { useState } from 'react'
 import './App.css'
 import DashboardResponsive from './components/DashboardResponsive/DashboardResponsive'
+import AnimatedGlassmorphismLoginRegistration from './components/animatedGlassmorphismLoginRegistration/AnimatedGlassmorphismLoginRegistration'
 import CircularOurTeam from './components/circularOurTeam/CircularOurTeam'
 import DropdownMenu from './components/dropdownMenu/DropdownMenu'
 import GlassmorphismCardHover from './components/glassmorphismCardHover/GlassmorphismCardHover'
@@ -10,8 +12,13 @@ import RangeInputBasic from './components/rangeInputBasic/RangeInputBasic'
 import RankList from './components/rankList/RankList'
 
 function App() {
+  const [background, setBackground] = useState(true)
+
   return (
     <>
+    <div className={`AppAnimatedLogin ${background ? '' : 'signup_AGL'} `} >
+        <AnimatedGlassmorphismLoginRegistration setBackground={setBackground} />
+      </div>
       <div className='AppDash' style={{ background: '#f6f6f9' }}>
         <DashboardResponsive />
       </div>
@@ -39,6 +46,7 @@ function App() {
       <div className='AppCOT' style={{ background: '#001d10' }} >
         <Loading />
       </div>
+      
     </>
   )
 }

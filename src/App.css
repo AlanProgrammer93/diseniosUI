@@ -16,6 +16,43 @@
     min-height: 100vh;
 }
 
+.AppAnimatedLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.AppAnimatedLogin::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('./assets/img1.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.AppAnimatedLogin::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('./assets/img2.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.AppAnimatedLogin.signup_AGL::after {
+    opacity: 1;
+}
+
+.AppAnimatedLogin.signup_AGL .container_AGL {
+    height: 440px;
+}
+
 .AppGCH {
     display: flex;
     justify-content: center;
@@ -24,15 +61,19 @@
     background: #111;
     transition: 0.5s;
 }
+
 .AppGCH:has(.box_GCH[data-color="clr1"]:hover) {
     background: #162527;
 }
+
 .AppGCH:has(.box_GCH[data-color="clr2"]:hover) {
     background: #202011;
 }
+
 .AppGCH:has(.box_GCH[data-color="clr3"]:hover) {
     background: #5b4510;
 }
+
 .AppGCH:has(.box_GCH[data-color="clr4"]:hover) {
     background: #611417;
 }
