@@ -1,0 +1,91 @@
+.container_GLA {
+    position: relative;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container_GLA .box_GLA {
+    position: relative;
+    width: 400px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container_GLA .box_GLA h2 {
+    font-size: 1.75em;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.container_GLA .box_GLA #grocery {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+}
+
+.container_GLA .box_GLA #grocery input {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    outline: none;
+}
+
+.container_GLA .box_GLA #grocery button {
+    background: #4bae4f;
+    min-width: 100px;
+    font-weight: 500;
+    border: 1px solid #333;
+    cursor: pointer;
+    padding: 10px;
+    outline: none;
+}
+
+.container_GLA ol {
+    position: relative;
+    padding: 10px 20px 10px 40px;
+    width: 100%;
+    min-height: 398px;
+    background: #fff repeating-linear-gradient(transparent 0%, transparent 99%, #000 99%, #000 100%);
+    background-size: 50px 50px;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container_GLA ol li {
+    position: relative;
+    font-size: 1.5em;
+    height: 50px;
+}
+
+.container_GLA ol li.done p {
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.container_GLA ol li .remove {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    color: red;
+    cursor: pointer;
+}
+
+.container_GLA ol li .check {
+    position: absolute;
+    top: 5px;
+    right: 35px;
+    width: 25px;
+    height: 25px;
+    color: green;
+    cursor: pointer;
+}

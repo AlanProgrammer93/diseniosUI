@@ -10,6 +10,7 @@ import LoginAnimated from './components/loginAnimated/LoginAnimated'
 import NavbarSearch from './components/navbarSearch/NavbarSearch'
 import RangeInputBasic from './components/rangeInputBasic/RangeInputBasic'
 import RankList from './components/rankList/RankList'
+import GroceryListApp from './components/groceryListApp/GroceryListApp'
 
 function App() {
   const [background, setBackground] = useState(true)
@@ -45,6 +46,9 @@ function App() {
       </div>
       <div className='AppCOT' style={{ background: '#001d10' }} >
         <Loading />
+      </div>
+      <div className='AppGLA'>
+        <GroceryListApp />
       </div>
       
     </>

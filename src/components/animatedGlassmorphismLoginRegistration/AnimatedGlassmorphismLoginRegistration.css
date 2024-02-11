@@ -42,12 +42,12 @@
     }
 }
 
-.container_AGL span {
+/* .container_AGL span {
     position: absolute;
     inset: 5px;
     overflow: hidden;
     border-radius: 15px;
-}
+} */
 
 .container_AGL span {
     position: absolute;

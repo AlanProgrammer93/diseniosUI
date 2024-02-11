@@ -16,6 +16,14 @@
     min-height: 100vh;
 }
 
+.AppGLA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #9c27b0, #31d5eb);
+}
+
 .AppAnimatedLogin {
     display: flex;
     justify-content: center;
