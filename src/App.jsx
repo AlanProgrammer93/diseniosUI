@@ -11,6 +11,8 @@ import NavbarSearch from './components/navbarSearch/NavbarSearch'
 import RangeInputBasic from './components/rangeInputBasic/RangeInputBasic'
 import RankList from './components/rankList/RankList'
 import GroceryListApp from './components/groceryListApp/GroceryListApp'
+import Carousel from './components/Carousel'
+import Accordion from './components/Accordion'
 
 function App() {
   const [background, setBackground] = useState(true)
@@ -50,7 +52,12 @@ function App() {
       <div className='AppGLA'>
         <GroceryListApp />
       </div>
-      
+      <div className='AppCOT' >
+        <Carousel />
+      </div>
+      <div className='AppCOT' style={{ background: '#3b3b3b' }}>
+        <Accordion />
+      </div>
     </>
   )
 }

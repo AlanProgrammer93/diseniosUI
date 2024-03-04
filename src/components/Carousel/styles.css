@@ -1,0 +1,81 @@
+.carousel_ui_container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #353131;
+    overflow: hidden;
+}
+
+.carousel_ui_container .swiper {
+    max-width: 800px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel_ui_container .swiper {
+    --swiper-pagination-color: rgba(56, 245, 255, 1);
+    --swiper-pagination-bullet-inactive-color: white;
+}
+
+.carousel_ui_container .swiper-wrapper {
+    width: 100%;
+    height: 300px;
+}
+
+.carousel_ui_container .swiper-slide {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel_ui_container .car_button_next,
+.carousel_ui_container .car_button_prev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(56, 245, 255, 0.2);
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+}
+:is(.car_button_next, .car_button_prev):hover {
+    background-color: rgba(56, 245, 255, 0.3);
+}
+
+.carousel_ui_container .car_button_next svg,
+.carousel_ui_container .car_button_prev svg {
+    width: 30px;
+    height: 30px;
+}
+
+.carousel_ui_container .car_button_next {
+    right: 10px;
+}
+
+.carousel_ui_container .car_button_prev {
+    left: 10px;
+}
+
+.carousel_ui_container img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.carousel_ui_container .swiper-pagination-bullet-active {
+    width: 15px;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
