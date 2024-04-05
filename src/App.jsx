@@ -13,6 +13,7 @@ import RankList from './components/rankList/RankList'
 import GroceryListApp from './components/groceryListApp/GroceryListApp'
 import Carousel from './components/Carousel'
 import Accordion from './components/Accordion'
+import GlowingCheckbox from './components/GlowingCheckbox'
 
 function App() {
   const [background, setBackground] = useState(true)
@@ -57,6 +58,9 @@ function App() {
       </div>
       <div className='AppCOT' style={{ background: '#3b3b3b' }}>
         <Accordion />
+      </div>
+      <div className='AppCOT' style={{ background: '#333' }}>
+        <GlowingCheckbox />
       </div>
     </>
   )
